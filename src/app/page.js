@@ -1,64 +1,50 @@
-'use client'
 import React from 'react';
-import { BsLinkedin } from 'react-icons/bs';
+import Head from 'next/head';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import cx from 'classnames';
+import Image from 'next/image';
+import profilePic from '../../public/profile.png'
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 export default function Home() {
-  const [open, setOpen] = React.useState(false);
-  const onToggleMenu = () => {
-    setOpen(!open);
-  }
   return (
-    <main className='bg-white dark:bg-gray-900 px-10 container mx-auto'>
-      <section className='min-h-screen'>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center">
-              {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" /> */}
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Omar</span>
-            </a>
-            <button onClick={onToggleMenu} data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-            </button>
-            <div className={cx('md:hidden', {
-              'flex': open,
-              'hidden': !open
-            })} class="w-full md:block md:w-auto" id="navbar-default">
-              <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tech Stack</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                </li>
-                <li class="flex items-center justify-center">
-                  <a href="#" class="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><BsLinkedin /></a>
-                </li>
-              </ul>
+    <div>
+      <Head>
+        <title>Omar Naeem</title>
+        <meta name='description' />
+        <link rel='icon' href="/favicon.ico" />
+      </Head>
+      <main className='bg-white dark:bg-gray-900 px-4 md:px-10 container mx-auto'>
+        <section className='min-h-screen'>
+          <nav className="py-10 mb-12 flex justify-between">
+            <h1 className='text-xl font-burtons'>omar</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill className='text-2xl cursor-pointer' />
+              </li>
+              <li >
+                <a href="#" className="bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md ml-8">Resume</a>
+              </li>
+            </ul>
+          </nav>
+          <div className='flex justify-evenly flex-col lg:flex-row items-center'>
+            <div className='lg:max-w-lg'>
+              <div className='text-center p-4 md:p-10'>
+                <h2 className='text-4xl lg:text-5xl py-2 text-teal-500 font-medium '>Omar Naeem</h2>
+                <h3 className='text-xl lg:text-2xl py-2'>Front-End React and React-Native Developer.</h3>
+                <p className='textsm lg:text-md py-5 leading-6 lg:leading-8 text-gray-800'>Frontend Developer providing services for developing Web applications using React and Android/iOS applications using React Native</p>
+              </div>
+              <div className='text-3xl lg:text-4xl flex justify-center gap-12 lg:gap-16 py-3 text-gray-600'>
+                <AiFillLinkedin />
+                <AiFillGithub />
+              </div>
+            </div>
+            <div className='relative bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full overflow-hidden w-60 lg:w-80 h-60 lg:h-80 mt-20'>
+              <Image src={profilePic} />
             </div>
           </div>
-        </nav>
-        <div>
-          <h2 className='text-lg'>Omar Naeem</h2>
-          <h3 className='text-lg'>Front-End React and React-Native Developer.</h3>
-          <p></p>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   )
 }
