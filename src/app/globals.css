@@ -22,3 +22,17 @@ a {
   font-family: "burtons";
   src: url('../../public/Burtons.otf');
 }
+
+.image-frame {
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 112.5px;
+  border-top-left-radius: 112.5px;
+  
+  @media (min-width: 1024px) {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+  }
+}
