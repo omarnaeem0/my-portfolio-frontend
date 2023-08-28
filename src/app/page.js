@@ -19,9 +19,11 @@ import TailwindIcon from '../assets/icons/tailwind.svg';
 import VSCodeIcon from '../assets/icons/vscode.svg';
 import SassIcon from '../assets/icons/sass.svg';
 import JestIcon from '../assets/icons/jest.svg';
+import WebpackIcon from '../assets/icons/webpack.svg';
+import JiraIcon from '../assets/icons/jira.svg';
 
 export default function Home() {
-  const [dark, setDark] = React.useState(false);
+  const [dark, setDark] = React.useState(true);
   React.useEffect(() => {
     const dark = localStorage.getItem('darkMode');
     setDark(JSON.parse(dark));
@@ -47,31 +49,31 @@ export default function Home() {
                   <BsFillMoonStarsFill className='text-2xl cursor-pointer text-gray-800 dark:text-gray-400' onClick={setDarkMode} />
                 </li>
                 <li >
-                  <a href="#" className="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded-md ml-8 text-white dark:text-gray-900">Resume</a>
+                  <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded-md ml-8 text-white dark:text-gray-900">Resume</a>
                 </li>
               </ul>
             </nav>
             <div className='flex justify-evenly flex-col lg:flex-row items-center my-10 lg:my-20'>
               <div className='lg:max-w-lg'>
-                <div className='text-center lg:p-4 flex flex-col items-center'>
+                <div className='text-center lg:p-4 flex flex-col items-center lg:items-start'>
                   <h2 className='text-4xl lg:text-5xl py-2 lg:py-6 text-blue-500 font-medium'>Omar Naeem</h2>
-                  <h3 className='text-xl max-w-sm lg:max-w-md lg:text-2xl py-2 text-gray-900 dark:text-white'>Front-End React and React-Native Developer</h3>
-                  <p className='textsm max-w-md lg:text-md py-5 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
+                  <h3 className='text-xl max-w-sm lg:max-w-md lg:text-2xl py-2 text-gray-900 dark:text-white lg:text-left'>Front-End React and React-Native Developer</h3>
+                  <p className='textsm max-w-md lg:text-md py-5 leading-6 lg:leading-8 text-gray-800 dark:text-white lg:text-left'>
                     Frontend Developer providing services for developing Web applications using React and Android/iOS applications using React Native
                   </p>
                 </div>
-                <div className='text-3xl lg:text-4xl flex justify-center gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400'>
+                <div className='text-3xl lg:text-4xl flex justify-center lg:justify-start gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400 lg:px-4'>
                   <a href="https://www.linkedin.com/in/omar-naeem-janjua" target="_blank">
                     <AiFillLinkedin />
                   </a>
                   <AiFillGithub />
                 </div>
               </div>
-              <div className='relative bg-gradient-to-r from-blue-500 to-indigo-500 image-frame overflow-hidden w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10'>
+              <div className='relative bg-gradient-to-r from-blue-500 to-violet-500 image-frame overflow-hidden w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10'>
                 <Image src={profilePic} />
               </div>
             </div>
-            <div className='text-center lg:p-10'>
+            <div className='text-center lg:p-10 py-16'>
               <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>My Tech Stack</h3>
               <p className='textsm lg:text-md py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
                 Technologies I’ve been working with recently
@@ -89,8 +91,10 @@ export default function Home() {
                 <Image src={TailwindIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={MUIIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={JestIcon} className='h-14 lg:h-16 w-auto' />
+                <Image src={WebpackIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={GitIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={GithubIcon} className='h-14 lg:h-16 w-auto' />
+                <Image src={JiraIcon} className='h-14 lg:h-16 w-auto' />
               </div>
             </div>
           </section>
