@@ -49,7 +49,7 @@ export default function Home() {
                   <BsFillMoonStarsFill className='text-2xl cursor-pointer text-gray-800 dark:text-gray-400' onClick={setDarkMode} />
                 </li>
                 <li >
-                  <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded-md ml-8 text-white">Resume</a>
+                  <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-t lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-indigo-400 dark:to-indigo-500 px-4 py-2 rounded-md ml-8 text-white">Resume</a>
                 </li>
               </ul>
             </nav>
@@ -69,7 +69,7 @@ export default function Home() {
                   <AiFillGithub />
                 </div>
               </div>
-              <div className='relative bg-gradient-to-b lg:bg-gradient-to-r from-blue-500 to-violet-600 image-frame overflow-hidden w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10'>
+              <div className='relative bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10'>
                 <Image src={profilePic} />
               </div>
             </div>
