@@ -49,7 +49,7 @@ export default function Home() {
                   <BsFillMoonStarsFill className='text-2xl cursor-pointer text-gray-800 dark:text-gray-400' onClick={setDarkMode} />
                 </li>
                 <li >
-                  <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded-md ml-8 text-white dark:text-gray-900">Resume</a>
+                  <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded-md ml-8 text-white">Resume</a>
                 </li>
               </ul>
             </nav>
@@ -58,7 +58,7 @@ export default function Home() {
                 <div className='text-center lg:p-4 flex flex-col items-center lg:items-start'>
                   <h2 className='text-4xl lg:text-5xl py-2 lg:py-6 text-blue-500 font-medium'>Omar Naeem</h2>
                   <h3 className='text-xl max-w-sm lg:max-w-md lg:text-2xl py-2 text-gray-900 dark:text-white lg:text-left'>Front-End React and React-Native Developer</h3>
-                  <p className='textsm max-w-md lg:text-md py-5 leading-6 lg:leading-8 text-gray-800 dark:text-white lg:text-left'>
+                  <p className='max-w-md text-md lg:text-md py-5 leading-6 lg:leading-8 text-gray-800 dark:text-white lg:text-left'>
                     Frontend Developer providing services for developing Web applications using React and Android/iOS applications using React Native
                   </p>
                 </div>
@@ -74,8 +74,38 @@ export default function Home() {
               </div>
             </div>
             <div className='text-center lg:p-10 py-16'>
+              <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>About Me</h3>
+              <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
+                My introduction
+              </p>
+              <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-4 lg:px-10 max-w-4xl m-auto mt-4'>
+                <p className='text-md lg:text-md text-gray-900 dark:text-white'>
+                  Hi, I'm a creative and experienced software engineer with over 6 years of experience in delivering high-impact web and mobile solutions,
+                  my objective is to continue leveraging my skills in translating designs into quality code and crafting intuitive application interfaces.
+                  I am dedicated to pushing the boundaries of user experience through my proficiency in JavaScript, ReactJS, and React-Native.
+                  My passion for staying updated with the latest best practices in development ensures that I consistently provide top-notch designs
+                  that enhance user satisfaction. I am committed to contributing my expertise to create responsive web-based and innovative Android
+                  and iOS mobile applications that drive success for clients and users alike.
+                </p>
+              </div>
+              <div className='flex flex-row justify-between flex-wrap py-6 px-4 lg:px-10 max-w-4xl m-auto'>
+                <div>
+                  <h3 className='text-gray-900 dark:text-white font-bold text-2xl mb-2'>06+</h3>
+                  <p className='text-gray-900 dark:text-white text-md w-24'>Years experience</p>
+                </div>
+                <div>
+                  <h3 className='text-gray-900 dark:text-white font-bold text-2xl mb-2'>12+</h3>
+                  <p className='text-gray-900 dark:text-white text-md w-24'>Completed projects</p>
+                </div>
+                <div>
+                  <h3 className='text-gray-900 dark:text-white font-bold text-2xl mb-2'>06+</h3>
+                  <p className='text-gray-900 dark:text-white text-md w-24'>Companies worked</p>
+                </div>
+              </div>
+            </div>
+            <div className='text-center lg:p-10 py-16'>
               <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>My Tech Stack</h3>
-              <p className='textsm lg:text-md py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
+              <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
                 Technologies I’ve been working with recently
               </p>
               <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-10 max-w-4xl m-auto mt-4'>
