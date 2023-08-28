@@ -80,7 +80,7 @@ export default function Home() {
               </p>
               <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-4 lg:px-10 max-w-4xl m-auto mt-4'>
                 <p className='text-md lg:text-md text-gray-900 dark:text-white'>
-                  Hi, I'm a creative and experienced software engineer with over 6 years of experience in delivering high-impact web and mobile solutions,
+                  Hi, I am a creative and experienced software engineer with over 6 years of experience in delivering high-impact web and mobile solutions,
                   my objective is to continue leveraging my skills in translating designs into quality code and crafting intuitive application interfaces.
                   I am dedicated to pushing the boundaries of user experience through my proficiency in JavaScript, ReactJS, and React-Native.
                   My passion for staying updated with the latest best practices in development ensures that I consistently provide top-notch designs
@@ -106,7 +106,7 @@ export default function Home() {
             <div className='text-center lg:p-10 py-16'>
               <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>My Tech Stack</h3>
               <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
-                Technologies I’ve been working with
+                {'Technologies I\’ve been working with'}
               </p>
               <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-10 max-w-4xl m-auto mt-4'>
                 <Image src={ReactIcon} className='h-14 lg:h-16 w-auto' />
