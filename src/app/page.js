@@ -21,10 +21,14 @@ import SassIcon from '../assets/icons/sass.svg';
 import JestIcon from '../assets/icons/jest.svg';
 
 export default function Home() {
-  const [dark, setDark] = React.useState(localStorage.getItem('darkMode'));
+  const [dark, setDark] = React.useState(false);
+  React.useEffect(() => {
+    const dark = localStorage.getItem('darkMode');
+    setDark(JSON.parse(dark));
+  }, [])
   const setDarkMode = () => {
     setDark(!dark);
-    localStorage.setItem('darkMode', true);
+    localStorage.setItem('darkMode', !dark);
   }
   return (
     <div className={dark ? 'dark' : ''}>
