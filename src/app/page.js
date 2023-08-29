@@ -34,7 +34,7 @@ export default function Home() {
   }
   return (
     <div className={dark ? 'dark' : ''}>
-      <div className='z-10 absolute w-screen h-full overflow-auto' >
+      <div className='z-10 absolute w-screen h-screen overflow-auto' >
         <Head>
           <title>Omar Naeem</title>
           <meta name='description' />
