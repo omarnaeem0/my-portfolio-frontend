@@ -33,12 +33,13 @@ export default function Home() {
     localStorage.setItem('darkMode', !dark);
   }
   return (
-    <div className={`overflow-clip h-screen ${dark ? ' dark' : ''}`}>
-      <div className='z-10 fixed w-screen h-full overflow-auto' >
+    <div className={`overflow-hidden h-screen ${dark ? ' dark' : ''}`}>
+      <div className='z-10 fixed w-screen h-screen overflow-auto' >
         <Head>
           <title>Omar Naeem</title>
           <meta name='description' />
           <meta name="theme-color" content="#60a5fa"></meta>
+          <meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
           <link rel='icon' href="/favicon.ico" />
         </Head>
         <main className='px-4 md:px-10 container mx-auto'>
@@ -142,7 +143,7 @@ export default function Home() {
           </section>
         </main>
       </div>
-      <div className='bg-white dark:bg-gray-900 w-screen h-full fixed overflow-clip' >
+      <div className='bg-white dark:bg-gray-900 w-screen h-screen absolute overflow-clip' >
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-10 right-10 scale-150' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-4 right-4' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-24 left-44 lg:top-10 lg:left-20 scale-50' />
