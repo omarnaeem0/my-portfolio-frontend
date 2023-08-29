@@ -42,8 +42,8 @@ export default function Home() {
         </Head>
         <main className='px-4 md:px-10 container mx-auto'>
           <section className='min-h-screen'>
-            <nav className="lg:px-10 py-10 mb-12 flex justify-between">
-              <h1 className='text-2xl font-burtons text-gray-600 dark:text-gray-400'>omar</h1>
+            <nav className="xl:px-20 py-10 mb-12 flex justify-between">
+              <h1 className='text-2xl font-burtons text-gray-600 dark:text-gray-400'></h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill className='text-2xl cursor-pointer text-gray-600 dark:text-gray-400' onClick={setDarkMode} />
@@ -53,16 +53,16 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className='flex justify-evenly flex-col lg:flex-row items-center my-10 lg:my-20'>
-              <div className='lg:max-w-lg'>
-                <div className='text-center lg:p-4 flex flex-col items-center lg:items-start'>
+            <div className='flex justify-between flex-col md:flex-row items-center my-10 lg:my-20 max-w-5xl mx-auto'>
+              <div className='max-w-sm lg:max-w-lg'>
+                <div className='text-center lg:py-4 flex flex-col items-center md:items-start'>
                   <h2 className='text-4xl lg:text-5xl py-2 lg:py-6 text-blue-500 font-medium'>Omar Naeem</h2>
-                  <h3 className='text-xl max-w-sm lg:max-w-md lg:text-2xl py-2 text-gray-900 dark:text-white lg:text-left'>Front-End React and React-Native Developer</h3>
-                  <p className='max-w-md text-md lg:text-md py-5 leading-6 lg:leading-8 text-gray-800 dark:text-white lg:text-left'>
+                  <h3 className='text-xl max-w-sm lg:max-w-md lg:text-2xl py-2 text-gray-900 dark:text-white md:text-left'>Front-End React and React-Native Developer</h3>
+                  <p className='max-w-md text-md lg:text-md py-5 leading-6 lg:leading-7 text-gray-800 dark:text-white md:text-left'>
                     Frontend Developer providing services for developing Web applications using React and Android/iOS applications using React Native
                   </p>
                 </div>
-                <div className='text-3xl lg:text-4xl flex justify-center lg:justify-start gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400 lg:px-4'>
+                <div className='text-3xl lg:text-4xl flex justify-center md:justify-start gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400'>
                   <a href="https://www.linkedin.com/in/omar-naeem-janjua" target="_blank">
                     <AiFillLinkedin />
                   </a>
@@ -73,12 +73,12 @@ export default function Home() {
                 <Image src={profilePic} />
               </div>
             </div>
-            <div className='text-center lg:p-10 py-16'>
+            <div className='text-center lg:p-2 py-16'>
               <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>About Me</h3>
               <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
                 My introduction
               </p>
-              <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-4 lg:px-10 max-w-4xl m-auto mt-4'>
+              <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-4 lg:px-10 max-w-5xl m-auto mt-4'>
                 <p className='text-md lg:text-md text-gray-900 dark:text-white'>
                   Hi, I am a creative and experienced software engineer with over 6 years of experience in delivering high-impact web and mobile solutions,
                   my objective is to continue leveraging my skills in translating designs into quality code and crafting intuitive application interfaces.
@@ -88,7 +88,7 @@ export default function Home() {
                   and iOS mobile applications that drive success for clients and users alike.
                 </p>
               </div>
-              <div className='flex flex-row justify-between flex-wrap py-6 px-4 lg:px-10 max-w-4xl m-auto'>
+              <div className='flex flex-row justify-between flex-wrap py-6 px-4 lg:px-10 max-w-5xl m-auto'>
                 <div>
                   <h3 className='text-gray-900 dark:text-white font-bold text-2xl mb-2'>06+</h3>
                   <p className='text-gray-900 dark:text-white text-md w-24'>Years experience</p>
@@ -108,7 +108,7 @@ export default function Home() {
               <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
                 {'Technologies I\’ve been working with'}
               </p>
-              <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-10 max-w-4xl m-auto mt-4'>
+              <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-10 max-w-5xl m-auto mt-4'>
                 <Image src={ReactIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={ReactNativeIcon} className='h-14 lg:h-16 w-auto' />
                 <Image src={ReduxIcon} className='h-14 lg:h-16 w-auto' />
