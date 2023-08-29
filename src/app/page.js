@@ -1,4 +1,5 @@
 'use client'
+import 'flowbite';
 import React from 'react';
 import Head from 'next/head';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
@@ -66,10 +67,18 @@ export default function Home() {
                 </div>
                 <div className='text-3xl lg:text-4xl flex justify-center md:justify-start gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400'>
                   <a href="https://www.linkedin.com/in/omar-naeem-janjua" target="_blank">
-                    <AiFillLinkedin />
+                    <AiFillLinkedin data-tooltip-target="linkedin link" className='hover:text-blue-500' />
+                    <div id="linkedin link" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                      LinkedIn
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
                   </a>
                   <a href="https://github.com/omarnaeem0" target="_blank">
-                    <AiFillGithub />
+                    <AiFillGithub data-tooltip-target="github link" className='hover:text-blue-500' />
+                    <div id="github link" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                      Github
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -113,22 +122,86 @@ export default function Home() {
                 {'Technologies I\’ve been working with'}
               </p>
               <div className='flex flex-row justify-center gap-12 flex-wrap py-6 px-10 max-w-5xl m-auto mt-4'>
-                <Image src={ReactIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={ReactNativeIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={ReduxIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={JSIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={TSIcon} className='h-13 lg:h-15 w-auto' />
-                <Image src={VSCodeIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={HTMLIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={CSSIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={SassIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={TailwindIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={MUIIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={JestIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={WebpackIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={GitIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={GithubIcon} className='h-14 lg:h-16 w-auto' />
-                <Image src={JiraIcon} className='h-14 lg:h-16 w-auto' />
+                <Image data-tooltip-target="React JS" src={ReactIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="React JS" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  React JS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="React Native" src={ReactNativeIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="React Native" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  React Native
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Redux" src={ReduxIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Redux" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Redux
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="JS" src={JSIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="JS" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  JavaScript
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="TS" src={TSIcon} className='h-13 lg:h-15 w-auto' />
+                <div id="TS" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  TypeScript
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="VSCode" src={VSCodeIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="VSCode" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  VSCode
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="HTML" src={HTMLIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="HTML" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  HTML
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Css" src={CSSIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Css" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  CSS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Sass" src={SassIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Sass" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  SASS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Tailwind" src={TailwindIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Tailwind" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Tailwind
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="MUI" src={MUIIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="MUI" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Material UI
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Jest" src={JestIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Jest" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Jest
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Webpack" src={WebpackIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Webpack" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Webpack
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Git" src={GitIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Git" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Git
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Github" src={GithubIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Github" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Github
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <Image data-tooltip-target="Jira" src={JiraIcon} className='h-14 lg:h-16 w-auto' />
+                <div id="Jira" role="tooltip" data-popper-placement="top" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 dark:text-white bg-white dark:bg-gray-700 borderrounded-lg shadow-sm opacity-0 tooltip">
+                  Jira
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
               </div>
             </div>
             {/* <div className='text-center lg:p-10 py-16'>
@@ -146,12 +219,12 @@ export default function Home() {
       <div className='bg-white dark:bg-gray-900 w-screen h-screen absolute overflow-clip' >
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-10 right-10 scale-150' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-4 right-4' />
-        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-24 left-44 lg:top-10 lg:left-20 scale-50' />
-        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-44 left-24 lg:-top-10 lg:left-0 scale-75' />
+        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-24 left-44 lg:-top-10 lg:left-20 scale-50' />
+        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-44 left-24 lg:-top-32 lg:left-0 scale-75' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 bottom-0 left-10 scale-150' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 -bottom-6 left-4' />
-        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 bottom-64 right-24 lg:-bottom-32 lg:right-0 scale-75' />
-        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 bottom-80 right-40 lg:-bottom-12 lg:right-20 scale-50' />
+        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 bottom-64 right-24 lg:-bottom-52 lg:right-0 scale-75' />
+        <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 bottom-80 right-40 lg:-bottom-32 lg:right-20 scale-50' />
       </div>
     </div>
   )
