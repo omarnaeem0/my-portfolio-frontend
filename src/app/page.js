@@ -34,7 +34,7 @@ export default function Home() {
   }
   return (
     <div className={dark ? 'dark' : ''}>
-      <div className='z-10 absolute w-screen h-full overflow-scroll' >
+      <div className='z-10 absolute w-screen h-full overflow-auto' >
         <Head>
           <title>Omar Naeem</title>
           <meta name='description' />
@@ -141,7 +141,7 @@ export default function Home() {
           </section>
         </main>
       </div>
-      <div className='bg-white dark:bg-gray-900 w-screen h-screen absolute overflow-clip' >
+      <div className='bg-white dark:bg-gray-900 w-screen h-full absolute overflow-clip' >
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-10 right-10 scale-150' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 top-4 right-4' />
         <div className='absolute bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-96 h-60 lg:h-96 opacity-20 hidden md:block top-24 left-44 lg:top-10 lg:left-20 scale-50' />
