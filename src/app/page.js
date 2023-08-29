@@ -33,7 +33,7 @@ export default function Home() {
     localStorage.setItem('darkMode', !dark);
   }
   return (
-    <div className={`overflow-hidden ${dark ? ' dark' : ''}`}>
+    <div className={`overflow-hidden h-screen ${dark ? ' dark' : ''}`}>
       <div className='z-10 fixed w-screen h-full overflow-auto' >
         <Head>
           <title>Omar Naeem</title>
