@@ -38,6 +38,7 @@ export default function Home() {
         <Head>
           <title>Omar Naeem</title>
           <meta name='description' />
+          <meta name="theme-color" content="#60a5fa"></meta>
           <link rel='icon' href="/favicon.ico" />
         </Head>
         <main className='px-4 md:px-10 container mx-auto'>
