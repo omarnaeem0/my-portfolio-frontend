@@ -1,7 +1,7 @@
 import portfolio from '../constants/portfolio';
 import { useState } from 'react';
-import greenerImages from '../../assets/projects/greener';
 import ImageCarousel from '../components/ImageCarousel';
+import greenerImages from '../../assets/projects/greener';
 import Image from 'next/image';
 
 export default function PortfolioSection() {
@@ -12,18 +12,15 @@ export default function PortfolioSection() {
       <p className='text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white'>
         {portfolio.description}
       </p>
-      <div className='flex flex-row items-center gap-12 flex-wrap py-6 px-10 max-w-5xl m-auto mt-4'>
+      <div className='flex flex-row items-center gap-12 flex-wrap py-6 lg:px-10 max-w-5xl m-auto mt-4'>
         <div id="indicators-carousel" className="relative w-full" data-carousel="static">
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div className="hidden duration-700 ease-in-out px-20" data-carousel-item="active">
-              <div className='flex flex-row w-full h-96  bg-gradient-to-r from-blue-500/30 bg-violet-500/30 rounded-3xl p-4'>
-            <ImageCarousel images={greenerImages} />
-                {/* <div className='w-1/2 h-full bg-gradient-to-l from-blue-500/30 bg-violet-500/30 rounded-2xl'>
-                  <Image src={greenerImages[0]} className='h-full w-auto py-4 m-auto' />
-                </div> */}
+          <div className="relative h-96 overflow-hidden rounded-lg md:h-96">
+            <div className="hidden duration-700 ease-in-out px-16 lg:px-20" data-carousel-item="active">
+              <div className='flex flex-col md:flex-row w-full h-96  bg-gradient-to-r from-blue-500/30 bg-violet-500/30 rounded-3xl p-4'>
+                <ImageCarousel images={greenerImages} />
                 <div className='flex-1 text-left pl-6'>
-                  <h3 className='text-gray-900 dark:text-white font-bold text-xl mb-2'>{portfolio.projects[2].name}</h3>
-                  <p className='text-gray-900 dark:text-white text-sm w-full'>{portfolio.projects[2].content}</p>
+                  <h3 className='text-gray-600 dark:text-white font-bold text-xl mb-2'>{portfolio.projects[2].name}</h3>
+                  <p className='text-gray-600 dark:text-white text-sm w-full text-ellipsis h-full'>{portfolio.projects[2].content}</p>
                 </div>
               </div>
             </div>
