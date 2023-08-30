@@ -1,7 +1,5 @@
 import portfolio from '../constants/portfolio';
 import ImageCarousel from '../components/ImageCarousel';
-import greenerImages from '../../assets/projects/greener';
-import Image from 'next/image';
 
 export default function PortfolioSection() {
   return (
@@ -11,26 +9,24 @@ export default function PortfolioSection() {
         {portfolio.description}
       </p>
       <div className='flex flex-row items-center flex-wrap py-10 max-w-5xl mx-auto mt-4'>
-        <div id="indicators-carousel" className="relative w-full" data-carousel="static">
+        <div className="relative w-full" data-carousel="static">
           <div className="relative h-144 md:h-80 lg:h-96 xl:h-128 overflow-hidden rounded-lg">
-            <div className="hidden duration-700 ease-in-out px-16 lg:px-20" data-carousel-item="active">
-              <div className='flex flex-col md:flex-row w-full h-full bg-gradient-to-r from-blue-500/30 bg-violet-500/30 rounded-3xl p-4'>
-                <ImageCarousel images={greenerImages} />
-                <div className='flex-1 text-left md:pl-6'>
-                  <h3 className='text-gray-600 dark:text-white font-bold text-xl mb-2'>{portfolio.projects[2].name}</h3>
-                  <p className='text-gray-600 dark:text-white text-sm w-full h-20 md:h-56 lg:h-68 xl:h-96 overflow-clip'>{portfolio.projects[2].content}</p>
+            {portfolio.projects.map((project) => (
+              <div key={project.name} className="hidden duration-700 ease-in-out px-16 lg:px-16" data-carousel-item>
+                <div className='flex flex-col md:flex-row w-full h-full bg-gradient-to-r from-blue-300 bg-violet-300 dark:from-blue-800 dark:to-violet-900 rounded-3xl p-4'>
+                  <ImageCarousel images={project.images} />
+                  <div className='flex-1 text-left md:pl-4'>
+                    <h3 className='text-gray-600 dark:text-white font-bold text-xl mb-2'>{project.name}</h3>
+                    <p className='text-gray-600 dark:text-white text-sm w-full h-20 md:h-56 lg:h-68 xl:h-96 overflow-clip'>{project.content}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="hidden duration-700 ease-in-out px-20" data-carousel-item>
-              <div>
-                <Image src={greenerImages[1]} alt="" />
-              </div>
-            </div>
+            ))}
           </div>
           <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            {portfolio.projects.map((_, index) => (
+              <button key={index} type="button" className="w-3 h-3 rounded-full" aria-current={index === 0 ? 'true' : 'false'} aria-label={`Slide ${index + 1}`} data-carousel-slide-to={index}></button>
+            ))}
           </div>
           <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-200/80 dark:bg-gray-800/30 group-hover:bg-gray-200 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
