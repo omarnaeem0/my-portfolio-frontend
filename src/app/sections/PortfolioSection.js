@@ -12,13 +12,13 @@ export default function PortfolioSection() {
       </p>
       <div className='flex flex-row items-center flex-wrap py-10 max-w-5xl mx-auto mt-4'>
         <div id="indicators-carousel" className="relative w-full" data-carousel="static">
-          <div className="relative h-96 overflow-hidden rounded-lg">
+          <div className="relative h-144 md:h-80 lg:h-96 xl:h-128 overflow-hidden rounded-lg">
             <div className="hidden duration-700 ease-in-out px-16 lg:px-20" data-carousel-item="active">
-              <div className='flex flex-col md:flex-row w-full h-96 bg-gradient-to-r from-blue-500/30 bg-violet-500/30 rounded-3xl p-4'>
+              <div className='flex flex-col md:flex-row w-full h-full bg-gradient-to-r from-blue-500/30 bg-violet-500/30 rounded-3xl p-4'>
                 <ImageCarousel images={greenerImages} />
-                <div className='flex-1 text-left pl-6'>
+                <div className='flex-1 text-left md:pl-6'>
                   <h3 className='text-gray-600 dark:text-white font-bold text-xl mb-2'>{portfolio.projects[2].name}</h3>
-                  <p className='text-gray-600 dark:text-white text-sm w-full text-ellipsis h-full'>{portfolio.projects[2].content}</p>
+                  <p className='text-gray-600 dark:text-white text-sm w-full h-20 md:h-56 lg:h-68 xl:h-96 overflow-clip'>{portfolio.projects[2].content}</p>
                 </div>
               </div>
             </div>

@@ -21,6 +21,10 @@ module.exports = {
       fontFamily: {
         burtons: 'burtons',
       },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      }
     },
   },
   plugins: [
