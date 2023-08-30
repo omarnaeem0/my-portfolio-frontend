@@ -1,11 +1,9 @@
 import portfolio from '../constants/portfolio';
-import { useState } from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import greenerImages from '../../assets/projects/greener';
 import Image from 'next/image';
 
 export default function PortfolioSection() {
-  const [page, setPage] = useState(0);
   return (
     <div className='text-center lg:p-2 py-16'>
       <h3 className='text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white'>{portfolio.title}</h3>
