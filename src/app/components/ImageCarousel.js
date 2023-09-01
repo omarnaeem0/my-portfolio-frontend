@@ -29,7 +29,7 @@ export default function ImageCarousel(props) {
       <div className="relative overflow-hidden rounded-lg h-full">
         {
           images.map((image, index) => (
-            <Image key={index} src={image} className={`h-full w-auto py-4 m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-1000 ${selected === index ? 'opacity-100' : 'opacity-0'}`} alt="" />
+            <Image key={index} src={image} className={`max-h-full w-auto m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-1000 ${selected === index ? 'opacity-100' : 'opacity-0'}`} alt="" />
           ))
         }
       </div>
