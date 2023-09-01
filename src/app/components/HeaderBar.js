@@ -10,7 +10,7 @@ export default function NavBar(props) {
           <BsFillMoonStarsFill className='text-2xl cursor-pointer text-gray-600 dark:text-gray-400 hover:text-blue-500 hover:dark:text-blue-500' onClick={setDarkMode} />
         </li>
         <li >
-          <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 px-4 py-2 rounded-md ml-8 text-white">Resume</a>
+          <a download="" href="Omar-Naeem-CV.pdf" className="bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 px-4 py-2 rounded-xl ml-8 text-white">Resume</a>
         </li>
       </ul>
     </nav>

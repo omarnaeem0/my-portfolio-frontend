@@ -10,6 +10,7 @@ export default {
       purpose is to evaluate patients by gathering information about their pain area, pain behaviour, and symptoms. Based on this evaluation, the application provides
       personalized diagnoses and offers various treatment exercises, including guides and videos, to aid users in their recovery and improve their overall health.`,
       images: pictures.sunndio,
+      demo: 'https://glittery-gumdrop-7e09c0.netlify.app/',
     },
     {
       name: 'GREENER',

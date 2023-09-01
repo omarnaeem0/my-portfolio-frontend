@@ -1,3 +1,4 @@
+import { HiExternalLink } from 'react-icons/hi';
 import portfolio from '../constants/portfolio';
 import ImageCarousel from '../components/ImageCarousel';
 
@@ -10,14 +11,17 @@ export default function PortfolioSection() {
       </p>
       <div className='flex flex-row items-center flex-wrap py-10 max-w-5xl mx-auto mt-4'>
         <div className="relative w-full" data-carousel="static">
-          <div className="relative h-144 md:h-80 lg:h-96 xl:h-128 overflow-hidden rounded-lg">
+          <div className="relative h-144 md:h-96 xl:h-128 overflow-hidden rounded-lg">
             {portfolio.projects.map((project) => (
               <div key={project.name} className="hidden duration-700 ease-in-out px-14 lg:px-16" data-carousel-item>
                 <div className='flex flex-col md:flex-row w-full h-full bg-gradient-to-r from-blue-300 bg-violet-300 dark:from-blue-800 dark:to-violet-900 rounded-3xl p-4'>
                   <ImageCarousel images={project.images} />
-                  <div className='flex-1 text-left md:pl-4'>
-                    <h3 className='text-gray-600 dark:text-white font-bold text-xl mb-2'>{project.name}</h3>
-                    <p className='text-gray-600 dark:text-white text-sm w-full h-20 md:h-56 lg:h-68 xl:h-96 overflow-clip'>{project.content}</p>
+                  <div className='flex flex-col justify-between flex-1 text-left md:pl-4'>
+                    <div>
+                      <h3 className='text-gray-600 dark:text-white font-bold text-md lg:text-xl mb-1 lg:mb-2'>{project.name}</h3>
+                      <p className='text-gray-600 dark:text-white text-xs lg:text-sm w-full h-32 md:h-64 xl:h-96 overflow-clip'>{project.content}</p>
+                    </div>
+                    {project.demo ? <a href={project.demo} target='_blank' className="flex flex-row self-end items-center bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 px-4 py-2 rounded-xl ml-8 text-white">Demo <HiExternalLink className='ml-2' /></a> : <div />}
                   </div>
                 </div>
               </div>
