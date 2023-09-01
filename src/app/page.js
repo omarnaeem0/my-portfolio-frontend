@@ -7,7 +7,8 @@ import AboutSection from './sections/AboutSection';
 import Background from './components/Background';
 import PortfolioSection from './sections/PortfolioSection';
 import IntroductionSection from './sections/IntroductionSection';
-import NavBar from './components/NavBar';
+import HeaderBar from './components/HeaderBar';
+import FooterBar from './components/FooterBar';
 
 export default function Home() {
   const [dark, setDark] = React.useState(true);
@@ -31,11 +32,12 @@ export default function Home() {
         </Head>
         <main className='px-4 md:px-10 container mx-auto'>
           <section className='min-h-screen'>
-            <NavBar setDarkMode={setDarkMode} />
+            <HeaderBar setDarkMode={setDarkMode} />
             <IntroductionSection />
             <AboutSection />
             <SkillsSection />
             <PortfolioSection />
+            <FooterBar/>
           </section>
         </main>
       </div>

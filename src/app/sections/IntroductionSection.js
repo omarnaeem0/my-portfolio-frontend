@@ -4,7 +4,7 @@ import introduction from '../constants/introduction';
 
 export default function IntroductionSection() {
   return (
-    <div className='flex justify-between flex-col md:flex-row items-center my-10 lg:my-20 max-w-5xl mx-auto'>
+    <div className='flex justify-between flex-col md:flex-row items-center my-10 lg:my-20 max-w-5xl mx-auto md:px-8'>
       <div className='max-w-sm lg:max-w-lg'>
         <div className='text-center lg:py-4 flex flex-col items-center md:items-start'>
           <h2 className='text-4xl lg:text-5xl py-2 lg:py-6 text-blue-500 font-medium'>{introduction.name}</h2>
