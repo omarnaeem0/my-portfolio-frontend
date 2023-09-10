@@ -17,7 +17,7 @@ export default function PortfolioSection() {
                 <div className='flex flex-col md:flex-row w-full h-full bg-gradient-to-r from-blue-400/30 bg-violet-400/30 dark:from-blue-600/30 dark:to-violet-900/30 rounded-3xl p-0'>
                   <ImageCarousel images={project.images} />
                   <div className='flex flex-col justify-between flex-1 text-left p-4 md:p-8'>
-                    <div className='overflow-scroll'>
+                    <div>
                       <h3 className='text-gray-600 dark:text-white font-bold text-md lg:text-xl mb-1'>{project.name}</h3>
                       <p className='text-gray-600 dark:text-white text-xs lg:text-sm w-full overflow-clip'>{project.intro}</p>
                       {project.techStack.frameworks &&
