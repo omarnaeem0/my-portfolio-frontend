@@ -7,6 +7,10 @@ export default {
     My passion for staying updated with the latest best practices in development ensures that I consistently provide top-notch designs
     that enhance user satisfaction. I am committed to contributing my expertise to create responsive web-based and innovative Android
     and iOS mobile applications that drive success for clients and users alike.`,
+  contact: {
+    phone: '+92 340 0853330',
+    email: 'omar_naeem@live.com'
+  },
   mainHighlights: [
     {
       title: 'Years experience',
