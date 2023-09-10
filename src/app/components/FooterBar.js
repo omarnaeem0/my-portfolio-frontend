@@ -12,7 +12,7 @@ export default function FooterBar() {
           </li>
         </a>
         <a href="mailto:omar_naeem@live.com">
-          <li className='flex flex-row items-center text-gray-600 dark:text-white hover:text-blue-500 hover:dark:text-blue-500'>
+          <li className='flex flex-row items-center text-gray-600 dark:text-white hover:text-blue-500 hover:dark:text-blue-500 transition-colors duration-500'>
             <MdEmail className='text-md md:text-2xl mr-2 md:mr-3' />
             <h2 className='text-sm sm:text-md md:text-lg'>omar_naeem@live.com</h2>
           </li>
