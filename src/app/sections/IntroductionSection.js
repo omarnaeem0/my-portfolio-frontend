@@ -20,7 +20,7 @@ export default function IntroductionSection() {
         </div>
       </div>
       <div className='relative bg-gradient-to-b lg:bg-gradient-to-r from-blue-400 dark:from-blue-500 to-violet-500 dark:to-violet-600 image-frame overflow-hidden w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10'>
-        <Image src={introduction.image} alt="" />
+        <Image src={introduction.image} alt="" loading='lazy'/>
       </div>
     </div>
   )
