@@ -21,7 +21,7 @@ export default function ImageCarousel(props) {
   useEffect(() => {
     const timer = setInterval(() => {
       onNext();
-    }, 3000);
+    }, 2000);
     return () => clearInterval(timer);
   }, [onNext])
   return (
