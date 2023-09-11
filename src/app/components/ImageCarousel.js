@@ -25,11 +25,11 @@ export default function ImageCarousel(props) {
     return () => clearInterval(timer);
   }, [onNext])
   return (
-    <div className="relative bg-white/50 dark:bg-black/30 rounded-3xl h-80 md:h-full w-full md:w-72 lg:w-96 xl:w-128 md:mb-0 p-4">
+    <div className="relative bg-white/50 dark:bg-black/30 rounded-3xl h-80 md:h-full w-full md:w-72 lg:w-96 xl:w-128 md:mb-0">
       <div className="relative overflow-hidden rounded-lg h-full">
         {
           images.map((image, index) => (
-            <Image key={index} src={image} className={`max-h-full w-auto m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-1000 ${selected === index ? 'opacity-100' : 'opacity-0'}`} alt="" />
+            <Image key={index} src={image} className={`max-h-full w-auto m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-all duration-500 p-4 ${selected === index ? 'opacity-100' : `${selected > index ? '-' : ''}translate-x-full opacity-0`}`} alt="" />
           ))
         }
       </div>
