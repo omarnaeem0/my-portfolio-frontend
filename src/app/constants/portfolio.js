@@ -19,6 +19,15 @@ export default {
       demo: 'https://glittery-gumdrop-7e09c0.netlify.app/',
     },
     {
+      name: 'PORTFOLIO',
+      intro: "My Portfolio, highly responsive and compatible with all types of screens, designed and developed by myself.",
+      techStack: {
+        frameworks: 'ReactJS, NextJS, Tailwind CSS, HTML5, CSS3',
+        languages: 'JavaScript',
+      },
+      images: pictures.portfolio,
+    },
+    {
       name: 'GREENER',
       intro: "A kitchen management AI app for Android and iOS, aimed at automating grocery orders and reducing food waste while offering personalized kitchen assistance.",
       content: `A foodtech/healthtech AI based React-Native app for Android and iOS both that can help users manage kitchen inventory, orders groceries, recommend recipes from

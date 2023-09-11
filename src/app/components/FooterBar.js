@@ -3,7 +3,7 @@ import about from '../constants/about';
 
 export default function FooterBar() {
   return (
-    <div className="xl:px-20 py-10 mb-20 flex justify-between">
+    <div className="xl:px-20 py-10 flex justify-between">
       <h1 className='text-2xl font-burtons text-gray-600 dark:text-gray-400'></h1>
       <ul className="flex flex-col md:flex-row items-end md:items-center">
         <a href={`https://wa.me/${about.contact.phone.replace(/\s/g, '')}`}>
