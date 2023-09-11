@@ -22,8 +22,8 @@ export default {
       name: 'PORTFOLIO',
       intro: "My Portfolio, highly responsive and compatible with all types of screens, designed and developed by myself.",
       techStack: {
-        frameworks: 'ReactJS, NextJS, Tailwind CSS, HTML5, CSS3',
-        languages: 'JavaScript',
+        frameworks: 'ReactJS, NextJS, Tailwind CSS',
+        languages: 'JavaScript, HTML5, CSS3',
       },
       images: pictures.portfolio,
     },
