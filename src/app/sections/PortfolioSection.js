@@ -84,7 +84,7 @@ export default function PortfolioSection() {
                       <a
                         href={project.demo}
                         target="_blank"
-                        className="flex flex-row self-end items-center bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 duration-500 px-4 py-2 rounded-xl ml-8 text-white"
+                        className="z-30 flex flex-row self-end items-center bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 duration-500 px-4 py-2 rounded-xl ml-8 text-white"
                       >
                         Demo <HiExternalLink className="ml-2" />
                       </a>
