@@ -27,7 +27,7 @@ export default function QualificationSection() {
             </h4>
           ))}
         </div>
-        <div className="w-96 flex flex-col">
+        <div className="w-80 md:w-96 flex flex-col">
           {qualification.qualifications[selected].items.map((each, index) => (
             <div key={index} className={`w-full flex flex-col`}>
               <div
@@ -55,7 +55,7 @@ export default function QualificationSection() {
                   {each.title}
                 </h2>
                 <h4
-                  className={`text-sm text-gray-800 dark:text-white flex-wrap mb-1`}
+                  className={`text-xs md:text-sm text-gray-800 dark:text-white flex-wrap mb-1`}
                 >
                   {each.place}
                 </h4>

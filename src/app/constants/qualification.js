@@ -43,13 +43,13 @@ const qualification = {
         },
         {
           title: "GCE A levels",
-          place: "Cambridge International Examination ( Private Candidate )",
+          place: "Cambridge International Examination \n(Private Candidate)",
           duration: "2011 - 2013",
         },
         {
           title: "GCE O levels",
           place:
-            "University of Cambridge International Examination ( Beaconhouse Canal Side Lahore)",
+            "University of Cambridge International Examination \n(Beaconhouse Canal Side Lahore)",
           duration: "2007 - 2010",
         },
       ],
