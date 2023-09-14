@@ -8,17 +8,17 @@ const qualification = {
         {
           title: "Principal Software Engineer",
           place: "NorthBay Solutions",
-          duration: "June 2022 - Present",
+          duration: "Jun 2022 - Present",
         },
         {
           title: "Senior Software Engineer",
           place: "Confiz Ltd.",
-          duration: "June 2020 – June 2022",
+          duration: "Jun 2020 – Jun 2022",
         },
         {
           title: "Software Engineer",
           place: "Confiz Ltd.",
-          duration: "Jan 2019 – June 2020",
+          duration: "Jan 2019 – Jun 2020",
         },
         {
           title: "Software Engineer",
@@ -28,7 +28,7 @@ const qualification = {
         {
           title: "Associate Software Engineer",
           place: "CreativeChaos",
-          duration: "June 2017 - Dec 2017",
+          duration: "Jun 2017 - Dec 2017",
         },
       ],
     },
