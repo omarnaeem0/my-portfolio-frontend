@@ -9,6 +9,7 @@ import PortfolioSection from "./sections/PortfolioSection";
 import IntroductionSection from "./sections/IntroductionSection";
 import HeaderBar from "./components/HeaderBar";
 import FooterBar from "./components/FooterBar";
+import QualificationSection from "./sections/QualificationSection";
 
 export default function Home() {
   const [dark, setDark] = React.useState(true);
@@ -39,6 +40,7 @@ export default function Home() {
             <IntroductionSection />
             <AboutSection />
             <SkillsSection />
+            <QualificationSection />
             <PortfolioSection />
             <FooterBar />
           </section>
