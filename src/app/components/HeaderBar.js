@@ -1,7 +1,10 @@
+"use client";
+import { useContext } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { ThemeContext } from "../context/ThemeContextWrapper";
 
-export default function NavBar(props) {
-  const { setDarkMode } = props;
+export default function NavBar() {
+  const { toggleDarkMode } = useContext(ThemeContext);
   return (
     <nav className="xl:px-20 py-10 mb-12 flex justify-between">
       <h1 className="text-2xl font-burtons text-gray-600 dark:text-gray-400"></h1>
@@ -9,7 +12,7 @@ export default function NavBar(props) {
         <li>
           <BsFillMoonStarsFill
             className="text-2xl cursor-pointer text-gray-600 dark:text-gray-400 hover:text-blue-500 hover:dark:text-blue-500"
-            onClick={setDarkMode}
+            onClick={toggleDarkMode}
           />
         </li>
         <li>

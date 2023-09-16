@@ -1,3 +1,4 @@
+"use client";
 import { useState, useCallback } from "react";
 import { HiExternalLink } from "react-icons/hi";
 import portfolio from "../constants/portfolio";

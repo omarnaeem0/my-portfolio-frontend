@@ -1,6 +1,4 @@
-"use client";
 import "flowbite";
-import React from "react";
 import Head from "next/head";
 import SkillsSection from "./sections/SkillsSection";
 import AboutSection from "./sections/AboutSection";
@@ -10,19 +8,11 @@ import IntroductionSection from "./sections/IntroductionSection";
 import HeaderBar from "./components/HeaderBar";
 import FooterBar from "./components/FooterBar";
 import QualificationSection from "./sections/QualificationSection";
+import ThemeContextWrapper from "./context/ThemeContextWrapper";
 
 export default function Home() {
-  const [dark, setDark] = React.useState(true);
-  React.useEffect(() => {
-    const dark = localStorage.getItem("darkMode");
-    setDark(JSON.parse(dark));
-  }, []);
-  const setDarkMode = () => {
-    setDark(!dark);
-    localStorage.setItem("darkMode", !dark);
-  };
   return (
-    <div className={`overflow-hidden h-full ${dark ? " dark" : ""}`}>
+    <ThemeContextWrapper>
       <div className="z-10 fixed w-screen h-full overflow-auto">
         <Head>
           <title>Omar Naeem</title>
@@ -36,7 +26,7 @@ export default function Home() {
         </Head>
         <main className="px-4 md:px-10 container mx-auto">
           <section className="min-h-screen">
-            <HeaderBar setDarkMode={setDarkMode} />
+            <HeaderBar />
             <IntroductionSection />
             <AboutSection />
             <SkillsSection />
@@ -47,6 +37,6 @@ export default function Home() {
         </main>
       </div>
       <Background />
-    </div>
+    </ThemeContextWrapper>
   );
 }
