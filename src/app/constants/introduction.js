@@ -1,21 +1,26 @@
-import profilePic from '../../../public/profile.png'
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { GOOGLE_DRIVE_BASE_URL } from "./common";
 
-export default {
-  name: 'Omar Naeem',
-  jobTitle: 'Front-End React and React-Native Developer',
+const INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID =
+  "1TE9oJoft7jqPJQWLi1YIfHBujnw5SdKS";
+
+const introduction = {
+  name: "Omar Naeem",
+  jobTitle: "Front-End React and React-Native Developer",
   content: `Frontend Developer providing services for developing Web applications using React and Android/iOS applications using React Native`,
-  image: profilePic,
+  image: `${GOOGLE_DRIVE_BASE_URL}${INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID}`,
   links: [
     {
-      title: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/omar-naeem-janjua',
+      title: "LinkedIn",
+      url: "https://www.linkedin.com/in/omar-naeem-janjua",
       Icon: AiFillLinkedin,
     },
     {
-      title: 'Github',
-      url: 'https://github.com/omarnaeem0',
+      title: "Github",
+      url: "https://github.com/omarnaeem0",
       Icon: AiFillGithub,
     },
-  ]
-}
+  ],
+};
+
+export default introduction;
