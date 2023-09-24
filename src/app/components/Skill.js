@@ -1,3 +1,5 @@
+"use client";
+import "flowbite";
 import Image from "next/image";
 
 export default function Skill(props) {
