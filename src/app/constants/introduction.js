@@ -6,7 +6,7 @@ const INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID =
 
 const introduction = {
   name: "Omar Naeem",
-  jobTitle: "Front-End React and React-Native Developer",
+  jobTitle: "Fullstack ReactJS, React-Native, and NodeJS Developer",
   content: `Frontend Heavy Fullstack Developer providing services for developing Web applications using React, Android/iOS applications using React Native, Backend Services using NodeJS, ExpressJS and MongoDB`,
   image: `${GOOGLE_DRIVE_BASE_URL}${INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID}`,
   links: [
