@@ -22,9 +22,7 @@ export default function PortfolioSection() {
   }, [setSelected, selected]);
   return (
     <div className="text-center lg:p-2 py-16">
-      <h3 className="text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white">
-        {portfolio.title}
-      </h3>
+      <h3 className="text-2xl lg:text-3xl py-2 font-semibold text-gray-600 dark:text-white">{portfolio.title}</h3>
       <p className="text-md lg:text-lg py-2 leading-6 lg:leading-8 text-gray-800 dark:text-white">
         {portfolio.description}
       </p>
@@ -35,9 +33,7 @@ export default function PortfolioSection() {
               <div
                 key={project.name}
                 className={`h-full w-full absolute transition-all duration-500 ${
-                  selected === index
-                    ? "opacity-100"
-                    : `translate-x-full opacity-0`
+                  selected === index ? "opacity-100" : `translate-x-full opacity-0`
                 }`}
               >
                 <div className="flex flex-col lg:flex-row w-full h-full bg-gradient-to-r from-blue-400/30 bg-violet-400/30 dark:from-blue-600/30 dark:to-violet-900/30 rounded-3xl p-0">
@@ -110,11 +106,7 @@ export default function PortfolioSection() {
             ))}
           </div>
           <div className="absolute top-0 right-0 h-full w-full flex justify-between items-center pointer-events-auto">
-            <button
-              className="pl-2 cursor-pointer group focus:outline-none"
-              type="button"
-              onClick={onPrevious}
-            >
+            <button className="pl-2 cursor-pointer group focus:outline-none" type="button" onClick={onPrevious}>
               <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-indigo-800/20 dark:bg-indigo-200/20 group-hover:bg-indigo-800/30 dark:group-hover:bg-indigo-200/30 group-focus:outline-none">
                 <svg
                   className="w-4 h-4 text-indigo-500"
@@ -134,11 +126,7 @@ export default function PortfolioSection() {
                 <span className="sr-only">Previous</span>
               </span>
             </button>
-            <button
-              type="button"
-              className="pr-2 cursor-pointer group focus:outline-none"
-              onClick={onNext}
-            >
+            <button type="button" className="pr-2 cursor-pointer group focus:outline-none" onClick={onNext}>
               <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-indigo-800/20 dark:bg-indigo-200/20 group-hover:bg-indigo-800/30 dark:group-hover:bg-indigo-200/30 group-focus:outline-none">
                 <svg
                   className="w-4 h-4 text-indigo-500"

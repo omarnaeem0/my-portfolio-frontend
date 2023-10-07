@@ -1,8 +1,7 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { GOOGLE_DRIVE_BASE_URL } from "./common";
 
-const INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID =
-  "1TE9oJoft7jqPJQWLi1YIfHBujnw5SdKS";
+const INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID = "1TE9oJoft7jqPJQWLi1YIfHBujnw5SdKS";
 
 const introduction = {
   name: "Omar Naeem",

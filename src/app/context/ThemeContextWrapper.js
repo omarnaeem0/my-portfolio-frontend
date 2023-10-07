@@ -19,9 +19,7 @@ export default function ThemeContextWrapper(props) {
   };
   return (
     <ThemeContext.Provider value={{ dark, toggleDarkMode }}>
-      <div className={`overflow-hidden h-full ${dark ? " dark" : ""}`}>
-        {children}
-      </div>
+      <div className={`overflow-hidden h-full ${dark ? " dark" : ""}`}>{children}</div>
     </ThemeContext.Provider>
   );
 }

@@ -1,7 +1,11 @@
-import greener from './greener';
-import sunndio from './sunndio';
-import portfolio from './portfolio';
+import greener from "./greener";
+import sunndio from "./sunndio";
+import portfolio from "./portfolio";
 
-export default {
- greener, sunndio, portfolio
+const pictures = {
+  greener,
+  sunndio,
+  portfolio,
 };
+
+export default pictures;

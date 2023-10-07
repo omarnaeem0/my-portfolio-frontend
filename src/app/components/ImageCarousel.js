@@ -32,9 +32,7 @@ export default function ImageCarousel(props) {
             key={index}
             src={image}
             className={`max-h-full w-auto m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-all duration-500 p-4 ${
-              selected === index
-                ? "opacity-100"
-                : `${selected > index ? "-" : ""}translate-x-full opacity-0`
+              selected === index ? "opacity-100" : `${selected > index ? "-" : ""}translate-x-full opacity-0`
             }`}
             alt=""
             loading="lazy"
@@ -47,19 +45,8 @@ export default function ImageCarousel(props) {
           className="z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={onPrevious}
         >
-          <svg
-            className="w-4 h-4 text-indigo-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 1 1 5l4 4"
-            />
+          <svg className="w-4 h-4 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
           </svg>
         </button>
         <p className="text-indigo-500 text-sm lg:text-sm overflow-clip">
@@ -70,19 +57,8 @@ export default function ImageCarousel(props) {
           className="z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={onNext}
         >
-          <svg
-            className="w-4 h-4 text-indigo-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m1 9 4-4-4-4"
-            />
+          <svg className="w-4 h-4 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
           </svg>
         </button>
       </div>

@@ -37,8 +37,7 @@ const qualification = {
       items: [
         {
           title: "Bachelors of Computer Engineering",
-          place:
-            "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology",
+          place: "Ghulam Ishaq Khan Institute of Engineering Sciences and Technology",
           duration: "2013 - 2017",
         },
         {
@@ -48,8 +47,7 @@ const qualification = {
         },
         {
           title: "GCE O levels",
-          place:
-            "University of Cambridge International Examination \n(Beaconhouse Canal Side Lahore)",
+          place: "University of Cambridge International Examination \n(Beaconhouse Canal Side Lahore)",
           duration: "2007 - 2010",
         },
       ],
