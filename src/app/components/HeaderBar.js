@@ -30,7 +30,7 @@ export default function NavBar() {
             download=""
             href="Omar-Naeem-CV.pdf"
             data-tooltip-target="Resume"
-            className="bg-gradient-to-t lg:bg-gradient-to-r from-blue-500 to-violet-500 px-4 py-2 rounded-xl ml-8 text-white"
+            className="bg-blue-500 hover:bg-blue-400 transition-all duration-500 px-4 py-2 rounded-xl ml-8 text-white"
           >
             Resume
           </a>
