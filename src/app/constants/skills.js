@@ -15,6 +15,7 @@ import JestIcon from "../../assets/icons/jest.svg";
 import WebpackIcon from "../../assets/icons/webpack.svg";
 import JiraIcon from "../../assets/icons/jira.svg";
 import NodeJSIcon from "../../assets/icons/nodejs.png";
+import ReactRouterIcon from "../../assets/icons/react-router.svg";
 
 const skills = {
   title: "My Tech Stack",
@@ -60,6 +61,10 @@ const skills = {
     {
       title: "Tailwind",
       src: TailwindIcon,
+    },
+    {
+      title: "React Router",
+      src: ReactRouterIcon,
     },
     {
       title: "Node JS",
