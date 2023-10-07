@@ -25,7 +25,7 @@ export default function ImageCarousel(props) {
     return () => clearInterval(timer);
   }, [onNext]);
   return (
-    <div className="relative bg-white/50 dark:bg-black/30 rounded-3xl h-80 lg:h-full w-full lg:w-128 xl:w-128 lg:mb-0">
+    <div className="relative bg-white/50 dark:bg-gray-900/20 rounded-3xl h-80 lg:h-full w-full lg:w-128 xl:w-128 lg:mb-0">
       <div className="relative overflow-hidden rounded-lg h-full">
         {images.map((image, index) => (
           <Image

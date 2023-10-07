@@ -36,7 +36,7 @@ export default function PortfolioSection() {
                   selected === index ? "opacity-100" : `translate-x-full opacity-0`
                 }`}
               >
-                <div className="flex flex-col lg:flex-row w-full h-full bg-gradient-to-r from-blue-400/30 bg-violet-400/30 dark:from-blue-600/30 dark:to-violet-900/30 rounded-3xl p-0">
+                <div className="flex flex-col lg:flex-row w-full h-full bg-gradient-to-b from-blue-400/30 bg-violet-400/30 dark:from-blue-800/30 dark:to-violet-950/30 rounded-3xl p-0">
                   <ImageCarousel images={project.images} />
                   <div className="flex flex-col justify-between flex-1 text-left p-4 lg:p-8">
                     <div>
