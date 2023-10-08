@@ -2,7 +2,7 @@ export default function LinkIcon(props) {
   const { url, title, Icon } = props;
   return (
     <a href={url} target="_blank">
-      <Icon data-tooltip-target={title} className="hover:text-blue-500" />
+      <Icon data-tooltip-target={title} className="hover:text-blue-500 focus:outline-none" />
       <div
         id={title}
         role="tooltip"

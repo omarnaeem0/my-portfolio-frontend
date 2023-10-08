@@ -12,7 +12,7 @@ export default function NavBar() {
         <li>
           <BsFillMoonStarsFill
             data-tooltip-target="DarkMode"
-            className="text-2xl cursor-pointer text-gray-600 dark:text-gray-400 hover:text-blue-500 hover:dark:text-blue-500"
+            className="text-2xl cursor-pointer text-gray-600 dark:text-gray-400 hover:text-blue-500 hover:dark:text-blue-500 focus:outline-none"
             onClick={toggleDarkMode}
           />
           <div
