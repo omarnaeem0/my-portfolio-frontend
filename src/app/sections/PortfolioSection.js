@@ -36,7 +36,7 @@ export default function PortfolioSection() {
                   selected === index ? "opacity-100" : `translate-x-full opacity-0`
                 }`}
               >
-                <div className="flex flex-col lg:flex-row w-full h-full bg-gradient-to-b from-blue-400/30 bg-violet-400/30 dark:from-blue-800/30 dark:to-violet-950/30 rounded-3xl p-0">
+                <div className="flex flex-col lg:flex-row w-full h-full bg-gray-50/30 dark:bg-gray-950/10 rounded-3xl p-0">
                   <ImageCarousel images={project.images} />
                   <div className="flex flex-col justify-between flex-1 text-left p-4 lg:p-8">
                     <div>
@@ -81,7 +81,7 @@ export default function PortfolioSection() {
                       <a
                         href={project.demo}
                         target="_blank"
-                        className="z-30 flex flex-row self-end items-center bg-indigo-500 hover:bg-indigo-400 duration-500 px-4 py-2 rounded-xl ml-8 text-white"
+                        className="z-30 flex flex-row self-end items-center bg-blue-500 hover:bg-blue-400 duration-500 px-4 py-2 rounded-xl ml-8 text-white"
                       >
                         Demo <HiExternalLink className="ml-2" />
                       </a>
