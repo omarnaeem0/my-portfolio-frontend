@@ -9,6 +9,8 @@ import HeaderBar from "./components/HeaderBar";
 import FooterBar from "./components/FooterBar";
 import QualificationSection from "./sections/QualificationSection";
 import ThemeContextWrapper from "./context/ThemeContextWrapper";
+import { Suspense } from "react";
+import { Blob } from "./components/Blob";
 
 export default function Home() {
   return (
@@ -26,13 +28,21 @@ export default function Home() {
         </Head>
         <main className="px-4 md:px-10 container mx-auto">
           <section className="min-h-screen">
-            <HeaderBar />
-            <IntroductionSection />
-            <AboutSection />
-            <SkillsSection />
-            <QualificationSection />
-            <PortfolioSection />
-            <FooterBar />
+            <Suspense
+              fallback={
+                <div className="w-full h-screen flex justify-center items-center">
+                  <Blob loading className="w-20 h-20 m-auto" />
+                </div>
+              }
+            >
+              <HeaderBar />
+              <IntroductionSection />
+              <AboutSection />
+              <SkillsSection />
+              <QualificationSection />
+              <PortfolioSection />
+              <FooterBar />
+            </Suspense>
           </section>
         </main>
       </div>

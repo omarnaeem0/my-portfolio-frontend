@@ -1,8 +1,6 @@
-import Image from "next/image";
 import LinkIcon from "../components/LinkIcon";
 import introduction from "../constants/introduction";
-import { Blob } from "../components/Blob";
-import { Suspense } from "react";
+import ProfileImage from "../components/ProfileImage";
 
 export default function IntroductionSection() {
   return (
@@ -23,17 +21,7 @@ export default function IntroductionSection() {
           ))}
         </div>
       </div>
-      <Blob className="relative w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10">
-        <Suspense fallback={"loading"}>
-          <Image
-            src={introduction.image}
-            alt=""
-            fill
-            loading="lazy"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </Suspense>
-      </Blob>
+      <ProfileImage src={introduction.image} />
     </div>
   );
 }
