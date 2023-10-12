@@ -9,9 +9,11 @@ export default function Skill(props) {
       <Image
         data-tooltip-target={title}
         src={src}
-        className={className || `h-14 lg:h-16 w-auto`}
+        className={className || `h-14 lg:h-16 w-auto object-contain`}
         alt=""
         loading="lazy"
+        width={60}
+        height={60}
       />
       <div
         id={title}

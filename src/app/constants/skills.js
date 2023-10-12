@@ -1,98 +1,75 @@
-import ReactIcon from "../../assets/icons/react.svg";
-import ReactNativeIcon from "../../assets/icons/reactnative.png";
-import CSSIcon from "../../assets/icons/css.svg";
-import HTMLIcon from "../../assets/icons/html.svg";
-import MUIIcon from "../../assets/icons/materialui.svg";
-import GitIcon from "../../assets/icons/git.svg";
-import GithubIcon from "../../assets/icons/github.svg";
-import JSIcon from "../../assets/icons/js.svg";
-import TSIcon from "../../assets/icons/typescript.svg";
-import ReduxIcon from "../../assets/icons/redux.svg";
-import TailwindIcon from "../../assets/icons/tailwind.svg";
-import VSCodeIcon from "../../assets/icons/vscode.svg";
-import SassIcon from "../../assets/icons/sass.svg";
-import JestIcon from "../../assets/icons/jest.svg";
-import WebpackIcon from "../../assets/icons/webpack.svg";
-import JiraIcon from "../../assets/icons/jira.svg";
-import NodeJSIcon from "../../assets/icons/nodejs.png";
-import ReactRouterIcon from "../../assets/icons/react-router.svg";
-
 const skills = {
   title: "My Tech Stack",
   description: "Technologies I’ve been working with",
   skills: [
     {
       title: "React JS",
-      src: ReactIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/react.svg",
     },
     {
       title: "React Native",
-      src: ReactNativeIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/reactnative.png",
     },
     {
       title: "Redux",
-      src: ReduxIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/redux.svg",
     },
     {
       title: "JavaScript",
-      src: JSIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/js.svg",
     },
     {
       title: "TypeScript",
-      src: TSIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/typescript.svg",
       className: "h-13 lg:h-15 w-auto",
     },
     {
       title: "HTML",
-      src: HTMLIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/html.svg",
     },
     {
       title: "CSS",
-      src: CSSIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/css.svg",
     },
     {
       title: "SASS",
-      src: SassIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/sass.svg",
     },
     {
       title: "Material UI",
-      src: MUIIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/materialui.svg",
     },
     {
       title: "Tailwind",
-      src: TailwindIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/tailwind.svg",
     },
     {
       title: "React Router",
-      src: ReactRouterIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/reactrouter.svg",
     },
     {
       title: "Node JS",
-      src: NodeJSIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/nodejs.png",
     },
     {
       title: "VSCode",
-      src: VSCodeIcon,
-    },
-    {
-      title: "Git",
-      src: GitIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/vscode.svg",
     },
     {
       title: "Github",
-      src: GithubIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/github.svg",
     },
     {
       title: "Jest",
-      src: JestIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/jest.svg",
     },
     {
       title: "Webpack",
-      src: WebpackIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/webpack.svg",
     },
     {
       title: "Jira",
-      src: JiraIcon,
+      src: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/icons/jira.svg",
     },
   ],
 };
