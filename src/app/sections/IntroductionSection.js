@@ -23,7 +23,13 @@ export default function IntroductionSection() {
         </div>
       </div>
       <Blob className="relative w-60 lg:w-80 h-60 lg:h-80 my-8 lg:my-10">
-        <Image src={introduction.image} alt="" fill loading="lazy" />
+        <Image
+          src={introduction.image}
+          alt=""
+          fill
+          loading="lazy"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </Blob>
     </div>
   );
