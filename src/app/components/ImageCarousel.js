@@ -31,10 +31,11 @@ export default function ImageCarousel(props) {
           <Image
             key={index}
             src={image}
-            className={`max-h-full w-auto m-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-all duration-500 p-4 ${
+            className={`object-contain max-h-full w-auto m-auto absolute top-1/2 left-1/2 transition-all duration-500 p-4 ${
               selected === index ? "opacity-100" : `${selected > index ? "-" : ""}translate-x-full opacity-0`
             }`}
             alt=""
+            fill
             loading="lazy"
           />
         ))}

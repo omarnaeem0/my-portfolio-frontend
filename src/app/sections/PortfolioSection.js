@@ -37,7 +37,7 @@ export default function PortfolioSection() {
                 }`}
               >
                 <div className="flex flex-col lg:flex-row w-full h-full bg-gray-50/30 dark:bg-gray-950/10 rounded-3xl p-0">
-                  <ImageCarousel images={project.images} />
+                  <ImageCarousel images={project.images.map(el => `${project.baseUrl}${el}`)} />
                   <div className="flex flex-col justify-between flex-1 text-left p-4 lg:p-8">
                     <div>
                       <h3 className="text-gray-600 dark:text-white font-bold text-md lg:text-xl mb-1">

@@ -1,5 +1,3 @@
-import pictures from "@/assets/projects";
-
 const portfolio = {
   title: "Portfolio",
   description: "Some of my recent projects",
@@ -16,7 +14,21 @@ const portfolio = {
         languages: "JavaScript, HTML5, CSS3, SASS",
         database: "MongoDB",
       },
-      images: pictures.sunndio,
+      baseUrl: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/projects/sunndio/",
+      images: [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png",
+        "8.png",
+        "9.png",
+        "10.png",
+        "11.png",
+        "12.png",
+      ],
       demo: "https://glittery-gumdrop-7e09c0.netlify.app/",
     },
     {
@@ -27,7 +39,8 @@ const portfolio = {
         frameworks: "ReactJS, NextJS, Tailwind CSS",
         languages: "JavaScript, HTML5, CSS3",
       },
-      images: pictures.portfolio,
+      baseUrl: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/projects/portfolio/",
+      images: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"],
     },
     {
       name: "GREENER",
@@ -40,7 +53,21 @@ const portfolio = {
         frameworks: "React Native, React Navigation, React Native Community, Redux, React Context",
         languages: "JavaScript",
       },
-      images: pictures.greener,
+      baseUrl: "https://omar-naeem-portfolio.s3.eu-north-1.amazonaws.com/projects/greener/",
+      images: [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png",
+        "8.png",
+        "9.png",
+        "10.png",
+        "11.png",
+        "12.png",
+      ],
     },
   ],
 };
