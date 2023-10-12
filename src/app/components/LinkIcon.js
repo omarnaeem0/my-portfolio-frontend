@@ -1,5 +1,8 @@
+import * as AIIcons from "react-icons/ai";
+
 export default function LinkIcon(props) {
-  const { url, title, Icon } = props;
+  const { url, title, icon } = props;
+  const Icon = AIIcons[icon];
   return (
     <a href={url} target="_blank">
       <Icon data-tooltip-target={title} className="hover:text-blue-500 focus:outline-none" />
