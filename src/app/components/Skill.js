@@ -3,12 +3,12 @@ import "flowbite";
 import Image from "next/image";
 
 export default function Skill(props) {
-  const { title, src, className } = props;
+  const { title, imgUrl, className } = props;
   return (
     <>
       <Image
         data-tooltip-target={title}
-        src={src}
+        src={imgUrl}
         className={className || `h-14 lg:h-16 w-auto object-contain`}
         alt=""
         loading="lazy"

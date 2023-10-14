@@ -12,7 +12,7 @@ export default function IntroductionSection() {
             {introduction.jobTitle}
           </h3>
           <p className="max-w-md text-md lg:text-md py-5 leading-6 lg:leading-7 text-gray-800 dark:text-white md:text-left">
-            {introduction.content}
+            {introduction.headline}
           </p>
         </div>
         <div className="text-3xl lg:text-4xl flex justify-center md:justify-start gap-10 lg:gap-12 py-2 text-gray-600 dark:text-gray-400">

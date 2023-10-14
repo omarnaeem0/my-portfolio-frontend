@@ -1,7 +1,7 @@
 const introduction = {
   name: "Omar Naeem",
   jobTitle: "Fullstack ReactJS, React-Native, and NodeJS Developer",
-  content: `Frontend Heavy Fullstack Developer providing services for developing Web applications using React, Android/iOS applications using React Native, Backend Services using NodeJS, ExpressJS and MongoDB`,
+  headline: `Experienced Frontend Heavy Fullstack Engineer | Expert in JavaScript, React.js, React Native, Node.js | Building Pixel Perfect, Responsive, High Performance and Scalable Web/Mobile Solutions | Agile Methodologies`,
   image: "https://drive.google.com/uc?export=view&id=1TE9oJoft7jqPJQWLi1YIfHBujnw5SdKS",
   links: [
     {
