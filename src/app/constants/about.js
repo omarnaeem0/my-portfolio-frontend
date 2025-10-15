@@ -1,7 +1,7 @@
 const about = {
   title: "About",
   description: "My introduction",
-  content: `Hi, I am a creative and experienced software engineer with over 6 years of experience in delivering high-impact web and mobile solutions,
+  content: `Hi, I am a creative and experienced software engineer with over 8 years of experience in delivering high-impact web and mobile solutions,
   my objective is to continue leveraging my skills in translating designs into quality code and crafting intuitive application interfaces.
   I am dedicated to pushing the boundaries of user experience through my proficiency in JavaScript, ReactJS, React-Native, and NodeJS.
   My passion for staying updated with the latest best practices in development ensures that I consistently provide top-notch designs
