@@ -14,7 +14,7 @@ const about = {
   mainHighlights: [
     {
       title: "Years experience",
-      value: "06+",
+      value: "08+",
     },
     {
       title: "Completed projects",

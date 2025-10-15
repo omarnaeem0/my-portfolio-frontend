@@ -23,12 +23,12 @@ const qualification = {
         {
           title: "Software Engineer",
           place: "BlueEast",
-          duration: "Dec 2017 – Dec 2018",
+          duration: "Feb 2018 – Dec 2018",
         },
         {
           title: "Associate Software Engineer",
           place: "CreativeChaos",
-          duration: "Jun 2017 - Dec 2017",
+          duration: "Aug 2017 - Feb 2018",
         },
       ],
     },
